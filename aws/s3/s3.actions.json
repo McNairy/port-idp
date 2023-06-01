@@ -26,8 +26,8 @@
     },
     "invocationMethod": {
       "type": "GITHUB",
-      "org": "yourpornsource",
-      "repo": "07-yps",
+      "org": "EXAMPLE",
+      "repo": "https://example.com",
       "workflow": "create-s3-bucket.yaml"
     },
     "trigger": "CREATE",
