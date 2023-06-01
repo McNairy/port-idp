@@ -1,0 +1,51 @@
+{
+  "identifier": "s3",
+  "description": "This blueprint represents an AWS S3 bucket in our software catalog",
+  "title": "S3",
+  "icon": "Bucket",
+  "schema": {
+    "properties": {
+      "link": {
+        "type": "string",
+        "format": "url",
+        "title": "Link"
+      },
+      "regionalDomainName": {
+        "type": "string",
+        "title": "Regional Domain Name"
+      },
+      "versioningStatus": {
+        "type": "string",
+        "title": "Versioning Status",
+        "enum": [
+          "Enabled",
+          "Suspended"
+        ]
+      },
+      "encryption": {
+        "type": "array",
+        "title": "Encryption"
+      },
+      "lifecycleRules": {
+        "type": "array",
+        "title": "Lifecycle Rules"
+      },
+      "publicAccess": {
+        "type": "object",
+        "title": "Public Access"
+      },
+      "tags": {
+        "type": "array",
+        "title": "Tags"
+      },
+      "arn": {
+        "type": "string",
+        "title": "ARN"
+      }
+    },
+    "required": []
+  },
+  "mirrorProperties": {},
+  "calculationProperties": {},
+  "relations": {}
+}

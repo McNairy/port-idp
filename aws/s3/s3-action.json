@@ -1,0 +1,37 @@
+[
+  {
+    "id": "",
+    "identifier": "create-s3-bucket",
+    "title": "Create S3 Bucket",
+    "icon": "Bucket",
+    "userInputs": {
+      "properties": {
+        "myInput1": {
+          "type": "string",
+          "title": "Bucket Name"
+        },
+        "myInput2": {
+          "type": "string",
+          "title": "Region",
+          "enum": [
+            "us-east-1",
+            "us-east-2"
+          ]
+        }
+      },
+      "required": [
+        "myInput1",
+        "myInput2"
+      ]
+    },
+    "invocationMethod": {
+      "type": "GITHUB",
+      "org": "yourpornsource",
+      "repo": "07-yps",
+      "workflow": "create-s3-bucket.yaml"
+    },
+    "trigger": "CREATE",
+    "description": "Create an S3 Bucket",
+    "requiredApproval": false
+  }
+]
