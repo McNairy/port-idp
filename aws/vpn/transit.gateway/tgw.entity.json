@@ -1,0 +1,73 @@
+{
+  "identifier": "aws_transit_gateway",
+  "title": "AWS Transit Gateway",
+  "description": "AWS Transit Gateway",
+  "icon": "Lock",
+  "calculationProperties": {},
+  "schema": {
+    "properties": {
+        "AmazonSideAsn" : {
+          "type" : "string",
+          "description" : "Private Autonomous System Number (ASN) for the Amazon side of a BGP session",
+          "default" : "64512"
+        },
+        "AssociationDefaultRouteTableId" : {
+          "type" : "string",
+          "description" : "Identifier of the default association route table",
+          "default" : "None"
+        },
+        "AutoAcceptSharedAttachments" : {
+          "type" : "string",
+          "description" : "Whether resource attachment requests are automatically accepted",
+          "default" : "disable"
+        },
+        "DefaultRouteTableAssociation" : {
+          "type" : "string",
+          "description" : "Whether resource attachments are automatically associated with the default association route table",
+          "default" : "disable"
+        },
+        "DefaultRouteTablePropagation" : {
+          "type" : "string",
+          "description" : "Whether resource attachments automatically propagate routes to the default propagation route table",
+          "default" : "disable"
+        },
+        "Description" : {
+          "type" : "string",
+          "description" : "Description of the transit gateway",
+          "default" : "None"
+        },
+        "DnsSupport" : {
+          "type" : "string",
+          "description" : "Whether DNS support is enabled",
+          "default" : "enable"
+        },
+        "MulticastSupport" : {
+          "type" : "string",
+          "description" : "Whether multicast is enabled on the transit gateway",
+          "default" : "disable"
+        },
+        "PropagationDefaultRouteTableId" : {
+          "type" : "string",
+          "description" : "Identifier of the default propagation route table",
+          "default" : "None"
+        },
+        "Tags" : {
+          "type" : "array",
+          "description" : "Tags to apply to the transit gateway",
+          "default" : []
+        },
+        "TransitGatewayCidrBlocks" : {
+          "type" : "array",
+          "description" : "CIDR blocks to associate with the transit gateway",
+          "default" : []
+        },
+        "VpnEcmpSupport" : {
+          "type" : "string",
+          "description" : "Whether VPN Equal Cost Multipath Protocol support is enabled",
+          "default" : "disable"
+        }   
+      },
+    "required": []
+  },
+  "relations": {}
+}

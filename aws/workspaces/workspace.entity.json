@@ -1,0 +1,44 @@
+{
+  "identifier": "aws_workspace",
+  "title": "AWS Workspace",
+  "description": "AWS Workspace",
+  "icon": "Lock",
+  "calculationProperties": {},
+  "schema": {
+    "properties": {
+      "ComputeTypeName" : {
+        "type" : "string",
+        "title" : "Compute Type Name"
+      },
+      "RootVolumeSizeGib" : { 
+        "type" : "number",
+        "title" : "Root Volume Size Gib",
+        "enum" : [ 80, 175, 650, 1024, 1224, 2048, 4096 ],
+        "default" : 80,
+        "description" : "The size of the root volume. This volume is encrypted by default."
+      },
+      "RunningMode" : {
+        "type" : "string",
+        "title" : "Running Mode",
+        "enum" : [ "AUTO_STOP", "ALWAYS_ON" ],
+        "default" : "AUTO_STOP",
+        "description" : "The running mode. For more information, see Manage the WorkSpace Running Mode."
+      },
+      "RunningModeAutoStopTimeoutInMinutes" : {
+        "type" : "number",
+        "title" : "Running Mode Auto Stop Timeout In Minutes",
+        "default" : 60,
+        "description" : "The time after a user logs off when WorkSpaces are automatically stopped. Configured in 60 minute intervals."
+      },
+      "UserVolumeSizeGib" : {
+        "type" : "number",
+        "title" : "User Volume Size Gib",
+        "enum" : [ 10, 20, 50, 100, 200, 300, 400, 500, 1000 ],
+        "default" : 10,
+        "description" : "The size of the user storage. For more information, see Amazon WorkSpaces Bundles."
+      }      
+    },
+    "required": []
+  },
+  "relations": {}
+}

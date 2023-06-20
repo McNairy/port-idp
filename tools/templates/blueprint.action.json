@@ -1,0 +1,20 @@
+{
+  "identifier": "myIdentifier",
+  "title": "My title",
+  "description": "My description",
+  "icon": "My icon",
+  "userInputs": {
+    "properties": {
+      "myInput1": {
+        "type": "my_type",
+        "title": "My input"
+      }
+    },
+    "required": []
+  },
+  "invocationMethod": {
+    "type": "myInvocationType"
+  },
+  "trigger": "myActionTrigger",
+  "requiredApproval": false
+}

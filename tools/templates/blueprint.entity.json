@@ -1,0 +1,15 @@
+{
+  "identifier": "{{=it.identifier}}",
+  "title": "{{=it.title}}",
+  "description": "{{=it.description}}",
+  "icon": "{{=it.icon}}",
+  "calculationProperties": {},
+  "schema": {
+    "properties": {
+      // Cloudformation schema goes here
+      }      
+    },
+    "required": []
+  },
+  "relations": {}
+}
